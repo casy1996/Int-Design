@@ -1,0 +1,25 @@
+<%- include ("./partials/header.ejs") %>
+
+    <title>Int Design - Gallery</title>
+</head>
+<body>
+    <a class="logo" href="/"><h1>Intelligent Design</h1></a>
+    <nav>
+        <h2>
+            <a href="/my_account/favorites">Favorites</a>
+            <a href="/my_account">My Account</a>
+        </h2>
+    </nav>
+
+    <% for (let i = 0; i < seedData.length; i++) { %>
+        <div class="item">
+        <img src=<%= seedData[i].image %> >
+            <span class="details">
+                <h3><%= seedData[i].name %> $<%= seedData[i].price%></h3>
+                <p><%= seedData[i].description%></p>
+                <h3><%= seedData[i].tags%></h3>
+            </span>
+        </div>
+    <% } %>
+
+<%- include ("./partials/footer.ejs") %>

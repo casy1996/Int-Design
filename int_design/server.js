@@ -23,7 +23,10 @@ connectToMongo();
 
 //INDEX
 app.get('/gallery', (req,res)=> {
-    res.send(seedData)
+    // res.send(seedData)
+    res.render("index.ejs", {
+        seedData: seedData,
+    })
 });
 
 //NEW
