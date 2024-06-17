@@ -5,6 +5,9 @@ const app = express();
 const port = process.env.PORT || 4000;
 const mongoURI = 'mongodb://127.0.0.1:27017/gallery'
 
+//MODELS
+const seedData = require('./models/seed.js')
+
 //MIDDLEWARE
 
 //MongoDB CONNECTION
@@ -19,6 +22,9 @@ async function connectToMongo() {
 connectToMongo();
 
 //INDEX
+app.get('/gallery', (req,res)=> {
+    res.send(seedData)
+});
 
 //NEW
 
