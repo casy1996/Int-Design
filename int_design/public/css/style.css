@@ -1,6 +1,79 @@
+* {
+    margin: 4px;
+    border: 0;
+}
+
 body {
-    /* background-image: url(https://i.postimg.cc/fR5tCwNj/inside-weather-Uxqlfigh6o-E-unsplash.jpg); */
+    background-color: rgb(192, 179, 157);
+    /* border: 5px solid black; */
+    /* background: url(https://i.postimg.cc/fR5tCwNj/inside-weather-Uxqlfigh6o-E-unsplash.jpg);
+    background-size: cover; */
     /* Photo by <a href="https://unsplash.com/@insideweather?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Inside Weather</a> on <a href="https://unsplash.com/photos/black-and-brown-leather-padded-tub-sofa-Uxqlfigh6oE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-   */
-    
+   */   
+}
+
+h3 {
+    font-size: 26px;
+    margin: 10px 0px 5px 0px;
+}
+
+p {
+    padding: 0px 50px 30px 0px;
+}
+
+.logo {
+    font-size: 26px;
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.navOptions {
+    display: flex;
+    margin: 0px 30px 0px 0px;
+}
+
+.navLinks {
+    display: flex;
+    justify-content: stretch;
+    padding: 0px 5px 0px 5px;
+    font-size: 16px;
+}
+
+.linkToAccount {
+    width: 10%;
+}
+
+.profileIcon {
+    width: 30px;
+    height: 30px;
+    margin: 0px 0px 4px 0px;
+}
+
+.itemShow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0px 100px 0px 0px auto;
+}
+
+.itemImage {
+    width: 40%;
+    height: 40%;
+    margin: 80px 20px 20px 40px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px 50px 0px 0px;
+}
+
+.addToCart {
+    width: 20%;
+    margin: 15px 0px 0px 0px;
 }
