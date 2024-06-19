@@ -1,11 +1,11 @@
-seedData = [
+const seedData = [
     {
         name: 'Orb Sofa',
         price: 3578,
         image: 'https://i.postimg.cc/RqrBBnz5/IMG-4104-auto-x2-ca48ad6e-c001-475c-a32b-87611201a6fb.jpg',
         description: 'Statement chair to draw interest into any space. Bubble cushions bring a welcoming cozy feel',
         tags: ['statement','sofa','chair','bubble'],
-        sold: false,
+        // sold: false,
     },
     {
         name: 'Ettore Sottsass Mirror',
@@ -13,7 +13,7 @@ seedData = [
         image: 'https://i.postimg.cc/5yQXgvmZ/decorative-objects-floor-mirrors-1970-1979-mid-century-modern-poltronova-living-in-style-gallery-273.jpg',
         description: 'Viral wavey standing mirror. Fill your space with the soft glow from the LED frame.',
         tags: ['statement','bold','backlit','retro','mirror'],
-        sold: true,
+        // sold: true,
     },
     {
         name: 'Lego Coffee Table',
@@ -21,8 +21,18 @@ seedData = [
         image: 'https://i.postimg.cc/FR7btYZx/ff9b636f8bae5fd9655b6b67f01eacb1.jpg',
         description: 'Homemade coffee table with base made of Lego drawers. Heavy glass table top.',
         tags: ['lego','table','colorful'],
-        sold: false,
+        // sold: false,
     }
-]
+];
 
 module.exports = seedData
+
+
+
+/* 
+Yesterday had started my routes using ejs/express and tested with seed data.
+
+Today Im working on finishing routes from yesterday and plan to transiton to mongo/mongoose by eod (build Schema and refactor res.renders to async try/catch)
+
+Thinking about having new/edit/delete only be available user functions when said user has created an account & signed in makes my head :boom: but will try not to think about it til I get there 
+*/

@@ -1,0 +1,40 @@
+<%- include ("./partials/header.ejs") %>
+
+    <title>Int Design - New</title>
+</head>
+<body>
+    <nav class="navBar">
+        <h1><a class="logo" href="/">Intelligent Design</a></h1>
+        <div class="navLinks">
+            <h2><a class="navLinks" href="/gallery">Gallery</a></h2>
+            <h2><a class="navLinks" href="/my_account/favorites">Favorites</a></h2>
+            <h2><a class="navLinks" href="/gallery/new">Create Listing</a></h2>
+            <!-- <h2><a class="navLinks" href="/cart">Cart</a></h2> -->
+            <a class="navLinks linkToAccount" href="/my_account"><img class="navLinks profileIcon" src='https://i.postimg.cc/SNK1GfHn/user.png'></a>
+        </div>
+    </nav>
+
+    <br></br>
+    <h1 class="sellHeading">Post an item to sell</h1>
+    <br>
+    <form class="itemForm" action="/gallery" method="POST">
+        <label for="image">Upload an Image</label>
+        <input placeholder="Image Link" type="text" name="image">
+        <label for="name">Name</label>
+        <input placeholder="Name" type="text" name="name">
+        <label for="price">Price</label>
+        <input placeholder="Price" type="number" name="price" min="1"><br>
+        <label for="description">Description</label>
+        <p>Talk about your piece. Is it homemade? If not, where was it purchased from? Describe the quality of the piece and remember to mention any damages. 
+        <br></br>
+        Adding a description helps others decide on purchasing.
+        </p>
+        <input placeholder="Found this piece 4 years ago at a Meadowsland flea market in E. Rutherford, NJ. Good condition with no damages. This piece was always a focal point of my living room but does not fit with the furnishing of my current place." type="text" name="description" class="descriptBox" size="20"><br>
+        <label for="tags">Tags</label>
+        <input placeholder="vintage, art, cozy" type="text" name="tags[]"><br>
+        <input type="submit" value="Add item to gallery"></input>
+    </form>
+
+<!-- https://i.postimg.cc/BntRH1VT/popmart-skullpanda.jpg -->
+<!-- image link to test new -->
+<%- include ("./partials/footer.ejs") %>

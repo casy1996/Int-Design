@@ -9,6 +9,7 @@
             <h2><a class="navLinks" href="/gallery">Gallery</a></h2>
             <h2><a class="navLinks" href="/my_account/favorites">Favorites</a></h2>
             <h2><a class="navLinks" href="/gallery/new">Create Listing</a></h2>
+            <!-- <h2><a class="navLinks" href="/cart">Cart</a></h2> -->
             <a class="navLinks linkToAccount" href="/my_account"><img class="navLinks profileIcon" src='https://i.postimg.cc/SNK1GfHn/user.png'></a>
         </div>
     </nav>
@@ -17,7 +18,7 @@
         <img class="itemImage" src=<%= seedData.image %> >
             <span class="details">
                 <h3><%= seedData.name %> $<%= seedData.price%></h3>
-                <p><%= seedData.description%></p>
+                <p class="itemDescript"><%= seedData.description%></p>
                 <h5>Tags: <%=seedData.tags.join(' | ')%></h5>
             <button class="addToCart" type="button" name="addToCart">Add to Cart</button>
             </span>
