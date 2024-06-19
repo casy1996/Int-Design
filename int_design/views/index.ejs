@@ -14,12 +14,14 @@
     </nav>
     
     <% for (let i = 0; i < seedData.length; i++) { %>
+        <div class="item">
         <a href="/gallery/<%=[i]%>">
-            <div class="item">
-                <img src=<%= seedData[i].image %> >
+            <div class="galleryItem">
+                <img class="itemImage" src=<%= seedData[i].image %> >
             <h3><%= seedData[i].name %> $<%= seedData[i].price%></h3>
             </div>
         </a>
+        </div>
     <br></br>
     <% } %>
 

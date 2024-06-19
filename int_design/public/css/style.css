@@ -49,23 +49,39 @@ h3 {
     margin: 0px 0px 4px 0px;
 }
 
+.item {
+    width: 30%;
+    height: 30%;
+}
+
+/* .galleryItem {
+    display: flex;
+    flex-direction: column;
+} */
+
 .itemShow {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: 0px 100px 0px 0px auto;
+    /* margin: 0px 100px 0px 0px auto; */
 }
 
 .itemImage {
-    width: 40%;
-    height: 40%;
-    margin: 80px 20px 20px 40px;
+    flex-grow: 3;
+    width: 36%;
+    height: 36%;
+    margin: 80px 25px 20px 0px;
 }
+
+/* .itemImage {
+    margin: 0px 25px 0px 75px;
+} */
 
 .details {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex-grow: 2;
     margin: 10px 50px 0px 0px;
 }
 
@@ -128,4 +144,43 @@ text-align: center;
   }
 
 
+/*>>>>>>>>>>>>>>>>>>> EDIT/DELETE STYLING <<<<<<<<<<<<<<<<<<<<*/
 
+.postOptions {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin: 74px 0px 0px 0px;
+    /* top: 8%;
+    right: 56%;
+    width: 20%;
+    margin: 0px 0px 0px 570px; */
+}
+
+.postIcons {
+    /* position: relative;
+    left: 38%; */
+    width: 34px;
+    height: 34px;
+}
+
+/*>>>>>>>>>>>>>>>>>>> EDIT FORM STYLING <<<<<<<<<<<<<<<<<<<<*/
+
+.editPage {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.editImage {
+    width: 35%;
+    height: 35%;
+    margin: 20px;
+}
+
+.editForm {
+    justify-content: stretch;
+    width: 40%;
+    /* height: 35%; */
+    margin: 20px;
+}

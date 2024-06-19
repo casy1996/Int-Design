@@ -1,6 +1,7 @@
 //DEPENDENCIES
 const express = require('express');
 const mongoose = require('mongoose');
+const methodOverride = require('method-override')
 const app = express();
 const port = process.env.PORT || 4000;
 // const mongoURI = 'mongodb://127.0.0.1:27017/gallery'
@@ -12,6 +13,8 @@ const seedData = require('./models/seed.js')
 app.use(express.static('public'));
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
+app.use(methodOverride('_method'))
+
 
 //MongoDB CONNECTION
 // async function connectToMongo() {
@@ -50,12 +53,18 @@ app.post("/gallery", (req, res)=> {
 });
 
 //EDIT
+app.get('/gallery/:id/edit', (req, res)=> {
+    res.render("edit.ejs", {
+        seedData: seedData[req.params.id],
+    })
+})
 
 //SHOW
 app.get("/gallery/:id", (req, res)=> {
     // res.send(`show route`)
     res.render("show.ejs", {
         seedData: seedData[req.params.id],
+        index: req.params.id,
     })
 });
 
