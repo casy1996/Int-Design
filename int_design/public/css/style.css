@@ -70,12 +70,13 @@ h3 {
     flex-grow: 3;
     width: 36%;
     height: 36%;
-    margin: 80px 25px 20px 0px;
+    margin: 80px 45px 20px 0px;
 }
 
-/* .itemImage {
-    margin: 0px 25px 0px 75px;
-} */
+.itemImageGallery {
+    width: 60%;
+    height: 60%;
+}
 
 .details {
     display: flex;

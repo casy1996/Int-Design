@@ -26,13 +26,3 @@ const seedData = [
 ];
 
 module.exports = seedData
-
-
-
-/* 
-Yesterday had started my routes using ejs/express and tested with seed data.
-
-Today Im working on finishing routes from yesterday and plan to transiton to mongo/mongoose by eod (build Schema and refactor res.renders to async try/catch)
-
-Thinking about having new/edit/delete only be available user functions when said user has created an account & signed in makes my head :boom: but will try not to think about it til I get there 
-*/

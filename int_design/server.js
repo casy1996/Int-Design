@@ -42,8 +42,16 @@ app.get("/gallery/new", (req, res)=> {
 });
 
 //DELETE
+app.delete("/gallery/:id", (req, res)=> {
+    gallery.splice(req.params.id, 1)
+    res.redirect("/gallery")
+});
 
 //UPDATE
+app.put("/gallery/:id", (req, res)=> {
+    seedData[req.params.id] = req.body
+    res.redirect("/gallery")
+})
 
 //CREATE
 app.post("/gallery", (req, res)=> {
@@ -53,11 +61,12 @@ app.post("/gallery", (req, res)=> {
 });
 
 //EDIT
-app.get('/gallery/:id/edit', (req, res)=> {
+app.get("/gallery/:id/edit", (req, res)=> {
     res.render("edit.ejs", {
         seedData: seedData[req.params.id],
+        index: req.params.id,
     })
-})
+});
 
 //SHOW
 app.get("/gallery/:id", (req, res)=> {
