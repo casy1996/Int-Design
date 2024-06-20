@@ -83,8 +83,8 @@ app.get("/gallery", async (req,res)=> {
             gallery: showAll,
         })
     } catch (error) {
-        console.error(err)
-        res.status(500).send(err)
+        console.error(error)
+        res.status(500).send(error)
     }
 });
 
@@ -122,12 +122,23 @@ app.get("/gallery/:id/edit", (req, res)=> {
 });
 
 //SHOW
-app.get("/gallery/:id", (req, res)=> {
+app.get("/gallery/:id", async (req, res)=> {
     // res.send(`show route`)
-    res.render("show.ejs", {
-        seedData: seedData[req.params.id],
-        index: req.params.id,
-    })
+    // res.render("show.ejs", {
+    //     seedData: seedData[req.params.id],
+    //     index: req.params.id,
+    // })
+    try {
+        const singleItem = await Gallery.findById(req.params.id)
+        console.log(singleItem);
+        // res.send(singleItem);
+        res.render("show.ejs", {
+            gallery: singleItem,
+        })
+    } catch (error) {
+        console.error(error)
+        res.status(500).send(error)
+    }
 });
 
 //EXPRESS WEB SERVER
