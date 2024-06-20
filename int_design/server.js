@@ -4,9 +4,10 @@ const mongoose = require('mongoose');
 const methodOverride = require('method-override')
 const app = express();
 const port = process.env.PORT || 4000;
-// const mongoURI = 'mongodb://127.0.0.1:27017/gallery'
+const mongoURI = 'mongodb://127.0.0.1:27017/gallery'
 
 //MODELS
+const Gallery = require('./models/gallery.js')
 const seedData = require('./models/seed.js')
 
 //MMIDDLEWARE
@@ -17,15 +18,15 @@ app.use(methodOverride('_method'))
 
 
 //MongoDB CONNECTION
-// async function connectToMongo() {
-//     try {
-//         await mongoose.connect(mongoURI)
-//         console.log(`Connected to MongoDB!`)
-//     } catch (error) {
-//         console.error(error)
-//     }
-// }
-// connectToMongo();
+async function connectToMongo() {
+    try {
+        await mongoose.connect(mongoURI)
+        console.log(`Connected to MongoDB!`)
+    } catch (error) {
+        console.error(error)
+    }
+}
+connectToMongo();
 
 //INDEX
 app.get("/gallery", (req,res)=> {
