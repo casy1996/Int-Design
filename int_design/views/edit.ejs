@@ -15,22 +15,22 @@
     </nav>
 
     <br></br>
-    <h1 class="sellHeading">Edit Listing for <%=seedData.name%></h1>
+    <h1 class="sellHeading">Edit Listing for <%=gallery.name%></h1>
     <br>
 
     <div class="editPage">
-    <img class="editImage" src="<%=seedData.image%>">
-    <form class="itemForm editForm" action="/gallery/<%=index%>?_method=PUT" method="POST">
+    <img class="editImage" src="<%=gallery.image%>">
+    <form class="itemForm editForm" action="/gallery/<%=gallery.id%>?_method=PUT" method="POST">
         <label for="image">Change Image</label>
-        <input value="<%=seedData.image%>" type="text" name="image">
+        <input value="<%=gallery.image%>" type="text" name="image">
         <label for="name">Name</label>
-        <input value="<%=seedData.name%>" type="text" name="name">
+        <input value="<%=gallery.name%>" type="text" name="name">
         <label for="price">Price</label>
-        <input value="<%=seedData.price%>" type="number" name="price" min="1"><br>
+        <input value="<%=gallery.price%>" type="number" name="price" min="1"><br>
         <label for="description">Description</label>
-        <input value="<%=seedData.description%>" type="text" name="description" class="descriptBox" size="20"><br>
+        <input value="<%=gallery.description%>" type="text" name="description" class="descriptBox" size="20"><br>
         <label for="tags">Tags</label>
-        <input value="<%=seedData.tags%>" type="text" name="tags[]"><br>
+        <input value="<%=gallery.tags%>" type="text" name="tags[]"><br>
         <input type="submit" value="Save Changes"></input>
     </form>
     </div>

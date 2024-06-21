@@ -95,30 +95,62 @@ app.get("/gallery/new", (req, res)=> {
 });
 
 //DELETE
-app.delete("/gallery/:id", (req, res)=> {
-    gallery.splice(req.params.id, 1)
-    res.redirect("/gallery")
+app.delete("/gallery/:id", async (req, res)=> {
+    // gallery.splice(req.params.id, 1)
+    // res.redirect("/gallery")
+    try {
+        await Gallery.findByIdAndDelete(req.params.id)
+        res.redirect("/gallery")
+    } catch (error) {
+        console.error(error);
+        res.status(500).send(error)
+    }
 });
 
 //UPDATE
-app.put("/gallery/:id", (req, res)=> {
-    seedData[req.params.id] = req.body
-    res.redirect("/gallery")
-})
+app.put("/gallery/:id", async (req, res)=> {
+    // seedData[req.params.id] = req.body
+    // res.redirect("/gallery")
+    try {
+        let updatedItem = await Gallery.findByIdAndUpdate(req.params.id, req.body, { new: true});
+        console.log(updatedItem)
+        res.redirect("/gallery")
+    } catch (error) {
+        console.error(error);
+        res.status(500).send(error)
+    }
+});
 
 //CREATE
-app.post("/gallery", (req, res)=> {
-    console.log(req.body)
-    seedData.push(req.body);
-    res.redirect("/gallery")
+app.post("/gallery", async (req, res)=> {
+    // console.log(req.body)
+    // seedData.push(req.body);
+    // res.redirect("/gallery")
+    try {
+        await Gallery.create(req.body)
+        // console.log(req.body)
+        res.redirect("/gallery")
+    } catch (error) {
+        console.error(error)
+        res.status(500).send(error);
+    }
 });
 
 //EDIT
-app.get("/gallery/:id/edit", (req, res)=> {
-    res.render("edit.ejs", {
-        seedData: seedData[req.params.id],
-        index: req.params.id,
-    })
+app.get("/gallery/:id/edit", async (req, res)=> {
+    // res.render("edit.ejs", {
+    //     seedData: seedData[req.params.id],
+    //     index: req.params.id,
+    // })
+    try {
+        const editItem = await Gallery.findById(req.params.id)
+        res.render("edit.ejs", {
+            gallery: editItem,
+        })
+    } catch (error) {
+        console.error(error)
+        res.status(500).send(error);
+    }
 });
 
 //SHOW
@@ -130,7 +162,7 @@ app.get("/gallery/:id", async (req, res)=> {
     // })
     try {
         const singleItem = await Gallery.findById(req.params.id)
-        console.log(singleItem);
+        // console.log(singleItem);
         // res.send(singleItem);
         res.render("show.ejs", {
             gallery: singleItem,
