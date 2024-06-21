@@ -17,11 +17,15 @@
         
         <div class="itemShow">
             <div class="postOptions">
-                <a href="/gallery/<%=gallery.id%>/edit"><img class="postIcons" src='https://i.postimg.cc/Gp4zhWpr/pencil.png'></a>
-                <a href="/gallery/<%=gallery.id%>?_method=DELETE" method=POST"><img class="postIcons" src='https://i.postimg.cc/xTQsyp6y/trash.png'></a>
-                <form></form>
+                <form action="/gallery/<%=gallery.id%>/edit">
+                    <input type="image" src='https://i.postimg.cc/Gp4zhWpr/pencil.png' alt="Edit">
+                </form>
+                <form action="/gallery/<%=gallery.id%>?_method=DELETE" method="POST">
+                    <input type="image" src='https://i.postimg.cc/xTQsyp6y/trash.png' alt="Delete"/>
+                </form>
+                
             </div>
-        <img class="itemImage" src=<%= gallery.image %> >
+        <img class="itemImage" src= <%= gallery.image %> >
             <span class="details">
                 <h3><%= gallery.name %> $<%= gallery.price%></h3>
                 <p class="itemDescript"><%= gallery.description%></p>
