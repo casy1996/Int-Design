@@ -16,7 +16,7 @@
     
     <% for (let i = 0; i < gallery.length; i++) { %>
         <div class="item">
-        <a href="/gallery/<%=gallery[i].id%>">
+        <a href="/gallery/<%=gallery[i]._id%>">
             <div class="galleryItem">
                 <img class="itemImageGallery" src=<%= gallery[i].image %> >
             <h3><%= gallery[i].name %> $<%= gallery[i].price%></h3>

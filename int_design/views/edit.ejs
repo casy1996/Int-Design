@@ -20,7 +20,7 @@
 
     <div class="editPage">
     <img class="editImage" src="<%=gallery.image%>">
-    <form class="itemForm editForm" action="/gallery/<%=gallery.id%>?_method=PUT" method="POST">
+    <form class="itemForm editForm" action="/gallery/<%=gallery._id%>?_method=PUT" method="POST">
         <label for="image">Change Image</label>
         <input value="<%=gallery.image%>" type="text" name="image">
         <label for="name">Name</label>

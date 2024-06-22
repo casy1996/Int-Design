@@ -46,7 +46,7 @@ router.put("/gallery/:id", async (req, res)=> {
     // seedData[req.params.id] = req.body
     // res.redirect("/gallery")
     try {
-        let updatedItem = await Gallery.findByIdAndUpdate(req.params.id, req.body, { new: true});
+        let updatedItem = await Gallery.findByIdAndUpdate(req.params.id, req.body, { new: true });
         console.log(updatedItem)
         res.redirect(`/gallery/${req.params.id}`)
     } catch (error) {

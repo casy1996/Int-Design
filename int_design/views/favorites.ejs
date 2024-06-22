@@ -21,7 +21,12 @@
         <a href="/gallery/<%=favorites[i].id%>">
             <div class="galleryItem">
                 <img class="itemImageGallery" src=<%= favorites[i].image %> >
-            <h3><%= favorites[i].name %> $<%= favorites[i].price%></h3>
+                <div class="favoritesDelete">
+                    <h3><%= favorites[i].name %> $<%= favorites[i].price%></h3> 
+                    <form class="favoritesTrash" action="/favorites/<%=favorites[i]._id%>?_method=DELETE" method="POST">
+                        <input type="image" src='https://i.postimg.cc/xTQsyp6y/trash.png' alt="Delete"/>
+                    </form>
+                </div>
             </div>
         </a>
         </div>
