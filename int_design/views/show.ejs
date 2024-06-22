@@ -7,7 +7,7 @@
         <h1><a class="logo" href="/">Intelligent Design</a></h1>
         <div class="navLinks">
             <h2><a class="navLinks" href="/gallery">Gallery</a></h2>
-            <h2><a class="navLinks" href="/my_account/favorites">Favorites</a></h2>
+            <h2><a class="navLinks" href="/favorites">Favorites</a></h2>
             <h2><a class="navLinks" href="/gallery/new">Create Listing</a></h2>
             <!-- <h2><a class="navLinks" href="/cart">Cart</a></h2> -->
             <a class="navLinks linkToAccount" href="/my_account"><img class="navLinks profileIcon" src='https://i.postimg.cc/SNK1GfHn/user.png'></a>
@@ -17,14 +17,18 @@
         
         <div class="itemShow">
             <div class="postOptions">
+                <form action="/favorites" method="POST">
+                    <input type="hidden" name="galleryId" value="<%=gallery.id%>">
+                    <input type="image" src='https://i.postimg.cc/DZ7ZgkrR/star.png' alt=""/>
+                </form>
                 <form action="/gallery/<%=gallery.id%>/edit">
                     <input type="image" src='https://i.postimg.cc/Gp4zhWpr/pencil.png' alt="Edit">
                 </form>
                 <form action="/gallery/<%=gallery.id%>?_method=DELETE" method="POST">
                     <input type="image" src='https://i.postimg.cc/xTQsyp6y/trash.png' alt="Delete"/>
                 </form>
-                
             </div>
+
         <img class="itemImage" src= <%= gallery.image %> >
             <span class="details">
                 <h3><%= gallery.name %> $<%= gallery.price%></h3>
@@ -38,4 +42,5 @@
 <!-- <a href="https://www.flaticon.com/free-icons/user" title="user icons">User icons created by Freepik - Flaticon</a> -->
 <!-- <a href="https://www.flaticon.com/free-icons/pencil" title="pencil icons">Pencil icons created by Freepik - Flaticon</a> -->
 <!-- <a href="https://www.flaticon.com/free-icons/delete" title="delete icons">Delete icons created by bqlqn - Flaticon</a> -->
+ <!-- <a href="https://www.flaticon.com/free-icons/star" title="star icons">Star icons created by Pixel perfect - Flaticon</a> -->
 <%- include ("./partials/footer.ejs") %>

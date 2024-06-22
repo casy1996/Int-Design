@@ -5,6 +5,7 @@ const methodOverride = require('method-override')
 const app = express();
 const port = process.env.PORT || 4000;
 const galleryController = require("./controllers/gallery.js")
+const favoriteController = require("./controllers/favorites.js")
 
 //CONFIGURATION
 const mongoURI = 'mongodb://127.0.0.1:27017/gallery'
@@ -20,6 +21,7 @@ app.use(express.static('public'));
 app.use(express.urlencoded({extended: true}));
 app.use(methodOverride('_method'))
 app.use(galleryController)
+app.use(favoriteController)
 
 //MongoDB CONNECTION
 async function connectToMongo() {

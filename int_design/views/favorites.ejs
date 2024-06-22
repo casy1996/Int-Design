@@ -13,13 +13,15 @@
             <a class="navLinks linkToAccount" href="/my_account"><img class="navLinks profileIcon" src='https://i.postimg.cc/SNK1GfHn/user.png'></a>
         </div>
     </nav>
+
+    <h1 class="sellHeading">Favorites</h1>
     
-    <% for (let i = 0; i < gallery.length; i++) { %>
+    <% for (let i = 0; i < favorites.length; i++) { %>
         <div class="item">
-        <a href="/gallery/<%=gallery[i].id%>">
+        <a href="/gallery/<%=favorites[i].id%>">
             <div class="galleryItem">
-                <img class="itemImageGallery" src=<%= gallery[i].image %> >
-            <h3><%= gallery[i].name %> $<%= gallery[i].price%></h3>
+                <img class="itemImageGallery" src=<%= favorites[i].image %> >
+            <h3><%= favorites[i].name %> $<%= favorites[i].price%></h3>
             </div>
         </a>
         </div>

@@ -5,7 +5,7 @@ const Gallery = require('../models/gallery.js')
 module.exports = router
 
 //INDEX
-router.get("/gallery", async (req,res)=> {
+router.get("/gallery", async (req, res)=> {
     // res.send(seedData)
     // res.render("index.ejs", {
     //     seedData: seedData,
