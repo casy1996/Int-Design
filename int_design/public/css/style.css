@@ -1,6 +1,7 @@
 *, html, body {
     margin: 0;
     border: 0;
+    overflow-x: hidden;
     /* padding-bottom: 30px; */
 }
 
@@ -8,13 +9,14 @@
 
 body {
     background-color: rgb(192, 179, 157);
-    width: 99vw;
+    width: 101vw;
     height: 100vh;
     /* border: 5px solid black; */
-    /* background: url(https://i.postimg.cc/fR5tCwNj/inside-weather-Uxqlfigh6o-E-unsplash.jpg);
-    background-size: cover; */
-    /* Photo by <a href="https://unsplash.com/@insideweather?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Inside Weather</a> on <a href="https://unsplash.com/photos/black-and-brown-leather-padded-tub-sofa-Uxqlfigh6oE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-   */   
+}
+
+.landingBody {
+    background: url(https://i.postimg.cc/htnYR9LV/Adobe-Stock-598327698.jpg);
+    background-size: cover;
 }
 
 h3 {
@@ -25,13 +27,15 @@ h3 {
 /*>>>>>>>>>>>>>>>>>>> NAV BAR STYLING <<<<<<<<<<<<<<<<<<<<*/
 
 .logo {
-    font-size: 26px;
+    font-family: titleFont;
+    font-size: 32px;
 }
 
 .navBar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* padding: 20px 10px 0px 20px; */
     padding: 20px 10px 0px 20px;
 }
 
@@ -44,8 +48,9 @@ h3 {
 .navLinks {
     display: flex;
     align-items: center;
+    font-family: titleFont;
     padding: 0px 7px 0px 7px;
-    font-size: 16px;
+    font-size: 22px;
     overflow: hidden;
 
 }
@@ -61,6 +66,9 @@ h3 {
 .homeTitle {
     display: flex;
     justify-content: center;
+    font-family: titleFont;
+    color: white;
+    font-size: 100px;
     margin: 15% 0px 0px 0px;
 }
 
@@ -73,7 +81,10 @@ h3 {
 
 .enterBtn {
     color: white;
-    background-color: rgba(106, 176, 186, 0.84);
+    font-family: titleFont;
+    font-size: 30px;
+    background-color: rgba(64, 114, 122, 0.84);
+    border-radius: 10%;
 }
 
 /*>>>>>>>>>>>>>>>>>>> NAV BAR (HOME) STYLING <<<<<<<<<<<<<<<<<<<<*/
@@ -118,9 +129,12 @@ h3 {
 .indexName {
     margin-top: -30px;
     text-align: center;
-    font-size: 40px;
-    color: rgb(107, 174, 237);
-    text-shadow: -1px -1px 0px #000, 1px -1px 0px #000, -1px 1px 0px #000, 1px 1px 0px #000;
+    font-family: montHeavy;
+    font-size: 42px;
+    /* color: rgb(107, 174, 237); */
+    /* color: rgba(77, 107, 98, 1); */
+    color: rgba(64, 114, 122, 0.84);
+    text-shadow: -0.5px -0.5px 0px rgba(64, 114, 122, 0.84), 0.5px -0.5px 0px rgba(64, 114, 122, 0.84), -0.5px 0.5px 0px #000, 0.5px 0.5px 0px #000;
     letter-spacing: 1px;
 }
 
@@ -129,11 +143,15 @@ h3 {
 .indexFooter {
     display: flex;
     justify-content: flex-start;
-    background-color: purple;
+    background-color: rgba(72, 66, 73, 1);
     padding: 20px;
+    padding-right: 50px;
+    padding-bottom: 100px;
 }
 
 .socialLink {
+    font-family: titleFont;
+    color: white;
     padding: 3px;
     font-weight: bold;
     font-size: 20px;
@@ -292,8 +310,24 @@ a {
     color: white;
 }
 
+/*>>>>>>>>>>>>>>>>>>> FONTS <<<<<<<<<<<<<<<<<<<<*/
 
-/* Color Theme Swatches in RGBA */
+@font-face { /*FACELIO*/
+    font-family: titleFont;
+    src: url(../fonts/Facelio.ttf);
+}
+
+@font-face { /*MONT-HEAVY*/
+    font-family: montHeavy;
+    src: url(../fonts/Mont-HeavyDEMO.otf);
+}
+@font-face { /*MONT-LIGHT*/
+    font-family: montLight;
+    src: url(../fonts/Mont-ExtraLightDEMO.otf);
+}
+
+/*>>>>>>>>>>>>>>>>>>> COLOR THEMES <<<<<<<<<<<<<<<<<<<<*/
+
 .Clay-street-Building-1-rgba { color: rgba(77, 107, 98, 1); }
 .Clay-street-Building-2-rgba { color: rgba(72, 66, 73, 1); }
 .Clay-street-Building-3-rgba { color: rgba(191, 179, 170, 1); }
