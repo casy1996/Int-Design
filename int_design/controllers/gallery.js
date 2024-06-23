@@ -4,6 +4,12 @@ const Gallery = require('../models/gallery.js')
 
 module.exports = router
 
+//LANDING PAGE
+router.get("/", (req, res)=> {
+    // res.send(`home page`)
+    res.render("home.ejs")
+});
+
 //INDEX
 router.get("/gallery", async (req, res)=> {
     // res.send(seedData)

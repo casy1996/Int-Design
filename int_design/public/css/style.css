@@ -1,10 +1,15 @@
-* {
-    margin: 4px;
+*, html, body {
+    margin: 0;
     border: 0;
+    /* padding-bottom: 30px; */
 }
+
+/*>>>>>>>>>>>>>>>>>>> GENERAL STYLING <<<<<<<<<<<<<<<<<<<<*/
 
 body {
     background-color: rgb(192, 179, 157);
+    width: 99vw;
+    height: 100vh;
     /* border: 5px solid black; */
     /* background: url(https://i.postimg.cc/fR5tCwNj/inside-weather-Uxqlfigh6o-E-unsplash.jpg);
     background-size: cover; */
@@ -14,8 +19,10 @@ body {
 
 h3 {
     font-size: 26px;
-    margin: 10px 0px 5px 0px;
+    padding: 10px 0px 5px 0px;
 }
+
+/*>>>>>>>>>>>>>>>>>>> NAV BAR STYLING <<<<<<<<<<<<<<<<<<<<*/
 
 .logo {
     font-size: 26px;
@@ -24,78 +31,153 @@ h3 {
 .navBar {
     display: flex;
     justify-content: space-between;
-    margin: 20px;
+    align-items: center;
+    padding: 20px 10px 0px 20px;
 }
 
 .navOptions {
     display: flex;
-    margin: 0px 30px 0px 0px;
+    padding: 0px 30px 0px 0px;
+    
 }
 
 .navLinks {
     display: flex;
-    justify-content: stretch;
-    padding: 0px 5px 0px 5px;
+    align-items: center;
+    padding: 0px 7px 0px 7px;
     font-size: 16px;
-}
+    overflow: hidden;
 
-.linkToAccount {
-    width: 10%;
 }
 
 .profileIcon {
     width: 30px;
     height: 30px;
-    margin: 0px 0px 4px 0px;
+    overflow: hidden;
 }
 
-.item {
-    width: 30%;
-    height: 30%;
-}
+/*>>>>>>>>>>>>>>>>>>> HOME STYLING <<<<<<<<<<<<<<<<<<<<*/
 
-/* .galleryItem {
+.homeTitle {
     display: flex;
-    flex-direction: column;
-} */
+    justify-content: center;
+    margin: 15% 0px 0px 0px;
+}
+
+.enter {
+    display: flex;
+    justify-content: center;
+    padding: 100px 0px 0px 0px;
+    width: 100%;
+}
+
+.enterBtn {
+    color: white;
+    background-color: rgba(106, 176, 186, 0.84);
+}
+
+/*>>>>>>>>>>>>>>>>>>> NAV BAR (HOME) STYLING <<<<<<<<<<<<<<<<<<<<*/
+
+.navBarHome {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 10px 0px 20px;
+}
+
+.homeIcon {
+    justify-content: flex-end;
+}
+
+/*>>>>>>>>>>>>>>>>>>> INDEX STYLING <<<<<<<<<<<<<<<<<<<<*/
+.navBarIndex {
+    padding: 20px 10px 60px 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 15%;
+}
+
+.container:nth-child(even) {
+    justify-content: flex-start;
+    /* padding-left: 10%; */
+}
+
+.galleryItem {
+    display: flex;
+    width: 52%;
+    padding: 20px;
+}
+
+.itemImageGallery {
+    width: 100%;
+    height: auto;
+}
+
+.indexName {
+    margin-top: -30px;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(107, 174, 237);
+    text-shadow: -1px -1px 0px #000, 1px -1px 0px #000, -1px 1px 0px #000, 1px 1px 0px #000;
+    letter-spacing: 1px;
+}
+
+/*>>>>>>>>>>>>>>>>>>> FOOTER STYLING <<<<<<<<<<<<<<<<<<<<*/
+
+.indexFooter {
+    display: flex;
+    justify-content: flex-start;
+    background-color: purple;
+    padding: 20px;
+}
+
+.socialLink {
+    padding: 3px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/*>>>>>>>>>>>>>>>>>>> SHOW STYLING <<<<<<<<<<<<<<<<<<<<*/
 
 .itemShow {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    /* margin: 0px 100px 0px 0px auto; */
+    margin: 0px 100px 0px 0px;
 }
 
 .itemImage {
-    flex-grow: 3;
+    /* flex-grow: 1; */
     width: 36%;
-    height: 36%;
     margin: 80px 45px 20px 0px;
 }
 
-.itemImageGallery {
-    width: 60%;
-    height: 60%;
+.showImageAndDetails {
+    display: flex;
+    justify-content: center;
 }
 
 .details {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex-grow: 2;
-    margin: 10px 50px 0px 0px;
+    /* flex-grow: 2; */
+    /* padding: 10px 50px 0px 0px; */
 }
 
-.itemDescript {
+/* .itemDescript {
     padding: 0px 50px 30px 0px;
-}
+} */
 
 .addToCart {
     width: 20%;
     margin: 15px 0px 0px 0px;
 }
 
-/*>>>>>>>>>>>>>>>>>>> FORM STYLING <<<<<<<<<<<<<<<<<<<<*/
+/*>>>>>>>>>>>>>>>>>>> GENERAL FORM STYLING <<<<<<<<<<<<<<<<<<<<*/
+
 input {
     height: 20px;
     padding: 3px;
@@ -145,7 +227,7 @@ text-align: center;
   }
 
 
-/*>>>>>>>>>>>>>>>>>>> EDIT/DELETE STYLING <<<<<<<<<<<<<<<<<<<<*/
+/*>>>>>>>>>>>>>>>>>>> EDIT/DELETE ICON STYLING <<<<<<<<<<<<<<<<<<<<*/
 
 .postOptions {
     display: flex;
@@ -197,3 +279,23 @@ text-align: center;
     width: 60px;
     height: 60px;
 } */
+
+
+/*>>>>>>>>>>>>>>>>>>> ALL LINK STYLING <<<<<<<<<<<<<<<<<<<<*/
+
+a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+
+a {
+    color: white;
+}
+
+
+/* Color Theme Swatches in RGBA */
+.Clay-street-Building-1-rgba { color: rgba(77, 107, 98, 1); }
+.Clay-street-Building-2-rgba { color: rgba(72, 66, 73, 1); }
+.Clay-street-Building-3-rgba { color: rgba(191, 179, 170, 1); }
+.Clay-street-Building-4-rgba { color: rgba(191, 168, 149, 1); }
+.Clay-street-Building-5-rgba { color: rgba(49, 75, 68, 1); }

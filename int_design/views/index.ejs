@@ -3,7 +3,7 @@
     <title>Int Design - Gallery</title>
 </head>
 <body>
-    <nav class="navBar">
+    <nav class="navBar navBarIndex">
         <h1><a class="logo" href="/">Intelligent Design</a></h1>
         <div class="navLinks">
             <h2><a class="navLinks" href="/gallery">Gallery</a></h2>
@@ -15,15 +15,22 @@
     </nav>
     
     <% for (let i = 0; i < gallery.length; i++) { %>
-        <div class="item">
-        <a href="/gallery/<%=gallery[i]._id%>">
-            <div class="galleryItem">
-                <img class="itemImageGallery" src=<%= gallery[i].image %> >
-            <h3><%= gallery[i].name %> $<%= gallery[i].price%></h3>
+        <div class="container">
+            <div class="item">
+                <a class="galleryLink" href="/gallery/<%=gallery[i]._id%>">
+                    <div class="galleryItem">
+                        <img class="itemImageGallery" src="<%=gallery[i].image%>">
+                        <h3 class="indexName"><%= gallery[i].name %> $<%= gallery[i].price%></h3>
+                    </div>
+                </a>
             </div>
-        </a>
         </div>
-    <br></br>
     <% } %>
+
+    <div class="indexFooter">
+        <p class="socialLink">Instagram</p>
+        <p class="socialLink">Twitter</p>
+        <p class="socialLink">Pinterest</p>
+    </div>
 
 <%- include ("./partials/footer.ejs") %>
