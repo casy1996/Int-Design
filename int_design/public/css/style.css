@@ -386,7 +386,9 @@ label {
 
 .favsHeading {
     font-family: montHeavy;
+    letter-spacing: 1px;
     text-align: center;
+    padding: 30px 0px 0px 0px;
 }
 
 .favDetails {
@@ -403,7 +405,22 @@ label {
     display: flex;
     width: 52%;
     padding: 20px 0px 20px 20px;
-    background-color: rgba(128, 128, 128, 0.182);
+    background-color: rgba(125, 125, 125, 0.504);
+}
+
+.emptyFavorites {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: rgba(125, 125, 125, 0.504);
+    width: 96%;
+    height: 650px;
+    border-radius: 50px;
+    margin: 20px 20px 50px 23px;
+    font-size: 24px;
+    font-family: titleFont;
 }
 
 /*>>>>>>>>>>>>>>>>>>> ALL LINK STYLING <<<<<<<<<<<<<<<<<<<<*/
