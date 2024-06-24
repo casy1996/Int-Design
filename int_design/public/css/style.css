@@ -64,12 +64,38 @@ h3 {
 /*>>>>>>>>>>>>>>>>>>> HOME STYLING <<<<<<<<<<<<<<<<<<<<*/
 
 .homeTitle {
+    position: relative;
     display: flex;
     justify-content: center;
     font-family: titleFont;
     color: white;
     font-size: 100px;
     margin: 15% 0px 0px 0px;
+    white-space: nowrap;
+}
+
+.homeTitle::after {
+    content: "elligent";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    white-space: nowrap;
+    animation: slideIn 5s forwards;
+    opacity: 0;
+    color: rgba(255, 255, 255, 05);
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    } 45% {
+        transform: translateX(-140%);
+        opacity: 0;
+    } 100% {
+        transform: translateX(-89%);
+        opacity: 1;
+    }
 }
 
 .enter {
@@ -96,6 +122,7 @@ h3 {
     font-family: titlefont;
     color: white;
 }
+
 
 /*>>>>>>>>>>>>>>>>>>> NAV BAR (HOME) STYLING <<<<<<<<<<<<<<<<<<<<*/
 
@@ -207,8 +234,6 @@ h3 {
     padding: 0px 62px 0px 0px;
 }
 
-
-
 /*>>>>>>>>>>>>>>>>>>> SHOW STYLING <<<<<<<<<<<<<<<<<<<<*/
 
 .itemShow {
@@ -281,6 +306,10 @@ label {
     padding: 0px 10px 50px 10px;
 }
 
+.newSpacer {
+    padding: 60px;
+}
+
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     white-space:pre-line;  
     position:relative;
@@ -333,6 +362,10 @@ label {
     width: 40%;
     margin: 20px;
     background-color: rgba(142, 142, 142, 0.762);
+}
+
+.editSpacer {
+    padding: 60px;
 }
 
 /*>>>>>>>>>>>>>>>>>>> FAVORITES PAGE STYLING <<<<<<<<<<<<<<<<<<<<*/

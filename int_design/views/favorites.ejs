@@ -16,6 +16,7 @@
 
     <h1 class="favsHeading">Favorites</h1>
     
+
     <% for (let i = 0; i < favorites.length; i++) { %>
         <div class="item">
         <a href="/gallery/<%=favorites[i].id%>">
@@ -32,5 +33,10 @@
         </div>
     <br></br>
     <% } %>
+
+
+    <div class="favSpacer">
+    </div>
+
 
 <%- include ("./partials/footer.ejs") %>
