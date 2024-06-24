@@ -14,17 +14,17 @@
         </div>
     </nav>
 
-    <h1 class="sellHeading">Favorites</h1>
+    <h1 class="favsHeading">Favorites</h1>
     
     <% for (let i = 0; i < favorites.length; i++) { %>
         <div class="item">
         <a href="/gallery/<%=favorites[i].id%>">
-            <div class="galleryItem">
+            <div class="favItem">
                 <img class="itemImageGallery" src=<%= favorites[i].image %> >
                 <div class="favoritesDelete">
-                    <h3><%= favorites[i].name %> $<%= favorites[i].price%></h3> 
+                    <h3 class="favDetails"><%= favorites[i].name %> $<%= favorites[i].price%></h3> 
                     <form class="favoritesTrash" action="/favorites/<%=favorites[i]._id%>?_method=DELETE" method="POST">
-                        <input type="image" src='https://i.postimg.cc/xTQsyp6y/trash.png' alt="Delete"/>
+                        <input class="favTrash" type="image" src='https://i.postimg.cc/xTQsyp6y/trash.png' alt="Delete"/>
                     </form>
                 </div>
             </div>

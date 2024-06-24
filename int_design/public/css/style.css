@@ -75,7 +75,7 @@ h3 {
 .enter {
     display: flex;
     justify-content: center;
-    padding: 100px 0px 0px 0px;
+    padding: 100px 0px 10px 0px;
     width: 100%;
 }
 
@@ -84,7 +84,17 @@ h3 {
     font-family: titleFont;
     font-size: 30px;
     background-color: rgba(64, 114, 122, 0.84);
-    border-radius: 10%;
+    border-radius: 5%;
+    box-shadow: 6px 6px 3px rgba(87, 87, 87, 0.344);
+}
+.enterBtn:active {
+    transform: translateY(1.5px)
+}
+
+.homeIntro {
+    text-align: center;
+    font-family: titlefont;
+    color: white;
 }
 
 /*>>>>>>>>>>>>>>>>>>> NAV BAR (HOME) STYLING <<<<<<<<<<<<<<<<<<<<*/
@@ -142,11 +152,11 @@ h3 {
 
 .indexFooter {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     background-color: rgba(72, 66, 73, 1);
-    padding: 20px;
+    padding: 8px 20px 0px 20px;
     padding-right: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 60px;
 }
 
 .socialLink {
@@ -156,6 +166,48 @@ h3 {
     font-weight: bold;
     font-size: 20px;
 }
+.lorem {
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+    font-family: titleFont;
+    font-size: 28px;
+}
+
+.newsletter {
+    display: flex;
+}
+
+.mailIcon {
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+    background-color: rgba(214, 214, 214, 0.284);
+    border-radius: 10px;
+}
+
+.footerHeadline {
+    color: rgba(0, 0, 0, 0);
+    text-shadow: 2px 2px 0.5px rgba(255, 255, 255, 0.368);
+    font-family: titleFont;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(72, 66, 73, 1);
+    padding: 6px 15px 0px 21px;
+}
+
+.headline {
+    flex: 1;
+    text-align: center;
+}
+
+.shareItem {
+    padding: 0px 62px 0px 0px;
+}
+
+
 
 /*>>>>>>>>>>>>>>>>>>> SHOW STYLING <<<<<<<<<<<<<<<<<<<<*/
 
@@ -194,23 +246,25 @@ h3 {
     margin: 15px 0px 0px 0px;
 }
 
-/*>>>>>>>>>>>>>>>>>>> GENERAL FORM STYLING <<<<<<<<<<<<<<<<<<<<*/
-
-input {
+.showOptions {
     height: 20px;
     padding: 3px;
 }
+
+/*>>>>>>>>>>>>>>>>>>> GENERAL FORM STYLING <<<<<<<<<<<<<<<<<<<<*/
 
 label {
     font-weight: bold;
 }
 
-form {
-    background-color: rgba(142, 142, 142, 0.762);
+.newItemInput {
+    height: 20px;
+    padding: 3px;
 }
 
 .sellHeading {
-text-align: center;
+    text-align: center;
+    font-family: montHeavy;
 }
 
 .itemForm {
@@ -220,6 +274,7 @@ text-align: center;
     justify-content: center;
     width: 25%;
     padding: 30px 0px 0px 0px;
+    background-color: rgba(142, 142, 142, 0.762);
 }
 
 .descriptBox {
@@ -252,15 +307,9 @@ text-align: center;
     flex-direction: column;
     flex-grow: 1;
     margin: 74px 0px 0px 0px;
-    /* top: 8%;
-    right: 56%;
-    width: 20%;
-    margin: 0px 0px 0px 570px; */
 }
 
 .postIcons {
-    /* position: relative;
-    left: 38%; */
     width: 34px;
     height: 34px;
 }
@@ -282,22 +331,47 @@ text-align: center;
 .editForm {
     justify-content: stretch;
     width: 40%;
-    /* height: 35%; */
     margin: 20px;
+    background-color: rgba(142, 142, 142, 0.762);
 }
-
 
 /*>>>>>>>>>>>>>>>>>>> FAVORITES PAGE STYLING <<<<<<<<<<<<<<<<<<<<*/
 
 .favoritesDelete {
     display: flex;
+    padding: 0px;
 }
 
-/* .favoritesTrash {
+.favoritesTrash {
     width: 60px;
     height: 60px;
-} */
+}
 
+.favTrash {
+    height: 25px;
+}
+
+.favsHeading {
+    font-family: montHeavy;
+    text-align: center;
+}
+
+.favDetails {
+    width: 62%;
+    text-align: center;
+    font-family: montHeavy;
+    font-size: 42px;
+    color: rgba(64, 114, 122, 0.84);
+    text-shadow: -0.5px -0.5px 0px rgba(64, 114, 122, 0.84), 0.5px -0.5px 0px rgba(64, 114, 122, 0.84), -0.5px 0.5px 0px #000, 0.5px 0.5px 0px #000;
+    letter-spacing: 1px;
+}
+
+.favItem {
+    display: flex;
+    width: 52%;
+    padding: 20px 0px 20px 20px;
+    background-color: rgba(128, 128, 128, 0.182);
+}
 
 /*>>>>>>>>>>>>>>>>>>> ALL LINK STYLING <<<<<<<<<<<<<<<<<<<<*/
 
@@ -315,6 +389,11 @@ a {
 @font-face { /*FACELIO*/
     font-family: titleFont;
     src: url(../fonts/Facelio.ttf);
+}
+
+@font-face { /*LOVAN*/
+    font-family: lovanFont;
+    src: url(../fonts/Lovan.ttf)
 }
 
 @font-face { /*MONT-HEAVY*/

@@ -19,13 +19,13 @@
             <div class="postOptions">
                 <form action="/favorites" method="POST">
                     <input type="hidden" name="galleryId" value="<%=gallery._id%>">
-                    <input type="image" src='https://i.postimg.cc/DZ7ZgkrR/star.png' alt=""/>
+                    <input class="showOptions" type="image" src='https://i.postimg.cc/DZ7ZgkrR/star.png' alt=""/>
                 </form>
                 <form action="/gallery/<%=gallery._id%>/edit">
-                    <input type="image" src='https://i.postimg.cc/Gp4zhWpr/pencil.png' alt="Edit">
+                    <input class="showOptions" type="image" src='https://i.postimg.cc/Gp4zhWpr/pencil.png' alt="Edit">
                 </form>
                 <form action="/gallery/<%=gallery._id%>?_method=DELETE" method="POST">
-                    <input type="image" src='https://i.postimg.cc/xTQsyp6y/trash.png' alt="Delete"/>
+                    <input class="showOptions" type="image" src='https://i.postimg.cc/xTQsyp6y/trash.png' alt="Delete"/>
                 </form>
             </div>
             <div class="showImageAndDetails">
@@ -44,4 +44,5 @@
 <!-- <a href="https://www.flaticon.com/free-icons/pencil" title="pencil icons">Pencil icons created by Freepik - Flaticon</a> -->
 <!-- <a href="https://www.flaticon.com/free-icons/delete" title="delete icons">Delete icons created by bqlqn - Flaticon</a> -->
  <!-- <a href="https://www.flaticon.com/free-icons/star" title="star icons">Star icons created by Pixel perfect - Flaticon</a> -->
+ <!-- <a href="https://www.flaticon.com/free-icons/letter" title="letter icons">Letter icons created by Freepik - Flaticon</a> -->
 <%- include ("./partials/footer.ejs") %>
