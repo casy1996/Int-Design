@@ -77,9 +77,10 @@ router.post("/favorites", async (req, res)=> {
 
     try {
         const itemFromGallery = await Gallery.findById(req.body.galleryId);
-        console.log(req.body);
+        // console.log(req.body);
         if (itemFromGallery) {
-            const alreadyFavorited = await Favorite.findOne(itemFromGallery._id);
+            const alreadyFavorited = await Favorite.findOne({galleryId: itemFromGallery._id});
+            console.log(alreadyFavorited)
             if (!alreadyFavorited) {
                 const addFavorite = new Favorite({
                 galleryId: itemFromGallery._id
