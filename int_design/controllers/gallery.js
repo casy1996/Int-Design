@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const Gallery = require('../models/gallery.js')
+const Favorite = require('../models/favorites.js')
 
 module.exports = router
 
@@ -39,7 +40,8 @@ router.delete("/gallery/:id", async (req, res)=> {
     // gallery.splice(req.params.id, 1)
     // res.redirect("/gallery")
     try {
-        await Gallery.findByIdAndDelete(req.params.id)
+        await Gallery.findByIdAndDelete(req.params.id);
+        await Favorite.deleteMany({ galleryId: req.params.id}) 
         res.redirect("/gallery")
     } catch (error) {
         console.error(error);

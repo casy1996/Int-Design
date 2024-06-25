@@ -145,48 +145,46 @@ h3 {
 }
 
 /*>>>>>>>>>>>>>>>>>>> INDEX STYLING <<<<<<<<<<<<<<<<<<<<*/
+
 .navBarIndex {
     padding: 20px 10px 20px 20px;
     background-color: rgba(72, 66, 73, 1);
 }
 
-.container {
-    display: flex;
-    justify-content: flex-end;
-    padding: 0px 0px 20px 0px;
-    padding-left: 15%;
-}
-
-.container:nth-child(even) {
-    justify-content: flex-start;
-    /* padding-left: 10%; */
-}
-
 .galleryItem {
     display: flex;
-    width: 52%;
+    justify-content: space-around;
+    width: 100%;
     padding: 20px;
 }
 
 .itemImageGallery {
-    width: 100%;
+    width: 70%;
     height: auto;
+    max-height: 500px;
 }
 
+/* .indexImage {
+    background-color: white;
+} */
+
 .indexName {
-    margin-top: -30px;
+    margin-top: 30px;
+    width: 80%;
     text-align: center;
     font-family: montHeavy;
     font-size: 42px;
     /* color: rgb(107, 174, 237); */
-    /* color: rgba(77, 107, 98, 1); */
-    color: rgba(64, 114, 122, 0.84);
-    text-shadow: -0.5px -0.5px 0px rgba(64, 114, 122, 0.84), 0.5px -0.5px 0px rgba(64, 114, 122, 0.84), -0.5px 0.5px 0px #000, 0.5px 0.5px 0px #000;
-    letter-spacing: 1px;
+    color: rgba(77, 107, 98, 1);
+    /* color: rgba(64, 114, 122, 0.84); */
+    /* text-shadow: -1px -1px 0px rgba(64, 114, 122, 0.84), 1px -1px 0px rgba(64, 114, 122, 0.84), -0.5px 0.5px 0px #000, 0.5px 0.5px 0px #000; */
+    letter-spacing: 1.5px;
+    background-color: rgb(216, 197, 171);
 }
 
 .indexContent {
-    padding: 30px 20px 10px 20px;
+    padding: 30px 0px 10px 0px;
+    margin: 20px 0px 20px 0px;
 }
 
 /*>>>>>>>>>>>>>>>>>>> FOOTER STYLING <<<<<<<<<<<<<<<<<<<<*/
@@ -439,7 +437,7 @@ label {
 }
 
 .editSpacer {
-    padding: 60px;
+    padding: 45px;
 }
 
 .navBarEdit {
@@ -485,8 +483,9 @@ label {
     text-align: center;
     font-family: montHeavy;
     font-size: 42px;
-    color: rgba(64, 114, 122, 0.84);
-    text-shadow: -0.5px -0.5px 0px rgba(64, 114, 122, 0.84), 0.5px -0.5px 0px rgba(64, 114, 122, 0.84), -0.5px 0.5px 0px #000, 0.5px 0.5px 0px #000;
+    /* color: rgba(64, 114, 122, 0.84); */
+    color: rgba(148, 208, 224, 0.84);
+    /* text-shadow: -0.5px -0.5px 0px rgba(64, 114, 122, 0.84), 0.5px -0.5px 0px rgba(64, 114, 122, 0.84), -0.5px 0.5px 0px #000, 0.5px 0.5px 0px #000; */
     letter-spacing: 1px;
 }
 
@@ -494,7 +493,7 @@ label {
     display: flex;
     width: 52%;
     padding: 20px 0px 20px 20px;
-    background-color: rgba(125, 125, 125, 0.504);
+    background-color: rgba(173, 173, 173, 0.762);
     border-radius: 10px;
 }
 
@@ -521,6 +520,7 @@ label {
 
 .itemFav {
     padding: 10px 0px 0px 20px;
+    margin: 0px 0px 70px 0px;
 }
 
 .descriptBox {

@@ -20,8 +20,12 @@
             <div class="item">
                 <a class="galleryLink" href="/gallery/<%=gallery[i]._id%>">
                     <div class="galleryItem">
-                        <img class="itemImageGallery" src="<%=gallery[i].image%>">
-                        <h3 class="indexName"><%= gallery[i].name %> $<%= gallery[i].price%></h3>
+                        <div class="indexImage">
+                            <img class="itemImageGallery" src="<%=gallery[i].image%>">
+                        </div>
+                        <div class="indexdetails">
+                            <h3 class="indexName"><%= gallery[i].name %> $<%= gallery[i].price%></h3>
+                        </div>
                     </div>
                 </a>
             </div>
