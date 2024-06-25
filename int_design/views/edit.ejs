@@ -3,7 +3,7 @@
     <title>Int Design - Edit </title>
 </head>
 <body>
-    <nav class="navBar">
+    <nav class="navBar navBarEdit">
         <h1><a class="logo" href="/">Intelligent Design</a></h1>
         <div class="navLinks">
             <h2><a class="navLinks" href="/gallery">Gallery</a></h2>
@@ -20,17 +20,17 @@
 
     <div class="editPage">
     <img class="editImage" src="<%=gallery.image%>">
-    <form class="itemForm editForm" action="/gallery/<%=gallery._id%>?_method=PUT" method="POST">
+    <form class="editForm" action="/gallery/<%=gallery._id%>?_method=PUT" method="POST">
         <label for="image">Change Image</label>
-        <input value="<%=gallery.image%>" type="text" name="image">
+        <input class="editItemDesc" value="<%=gallery.image%>" type="text" name="image">
         <label for="name">Name</label>
-        <input value="<%=gallery.name%>" type="text" name="name">
+        <input class="editItemDesc" value="<%=gallery.name%>" type="text" name="name">
         <label for="price">Price</label>
-        <input value="<%=gallery.price%>" type="number" name="price" min="1"><br>
+        <input class="editItemDesc" value="<%=gallery.price%>" type="number" name="price" min="1"><br>
         <label for="description">Description</label>
-        <input value="<%=gallery.description%>" type="text" name="description" class="descriptBox" size="20"><br>
+        <input placeholder="<%=gallery.description%>" type="text" name="description" class="descriptBox" size="20"><br>
         <label for="tags">Tags</label>
-        <input value="<%=gallery.tags%>" type="text" name="tags[]"><br>
+        <input class="editItemDesc" value="<%=gallery.tags%>" type="text" name="tags[]"><br>
         <input type="submit" value="Save Changes">
     </form>
     </div>

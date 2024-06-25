@@ -3,7 +3,7 @@
     <title>Int Design - New</title>
 </head>
 <body>
-    <nav class="navBar">
+    <nav class="navBar navBarNew">
         <h1><a class="logo" href="/">Intelligent Design</a></h1>
         <div class="navLinks">
             <h2><a class="navLinks" href="/gallery">Gallery</a></h2>
@@ -15,8 +15,15 @@
     </nav>
 
     <br></br>
+    
+
+    
     <h1 class="sellHeading">Post an item to sell</h1>
     <br>
+
+    <div class="sellFlex">
+        <img class="fillerImage" src="https://i.postimg.cc/nrdJv5kY/jean-philippe-delberghe-Ry9-WBo3qmoc-unsplash.jpg">
+
     <form class="itemForm" action="/gallery" method="POST">
         <label for="image">Upload an Image</label>
         <input class="newItemInput" placeholder="Image Link" type="text" name="image">
@@ -25,15 +32,17 @@
         <label for="price">Price</label>
         <input class="newItemInput" placeholder="Price" type="number" name="price" min="1"><br>
         <label for="description">Description</label>
-        <p>Talk about your piece. Is it homemade? If not, where was it purchased from? Describe the quality of the piece and remember to mention any damages. 
+        <p class="newItemDesc">Talk about your piece. Is it homemade? If not, where was it purchased from? Describe the quality of the piece and remember to mention any damages. 
         <br></br>
         Adding a description helps others decide on purchasing.
         </p>
-        <input placeholder="This piece was always a focal point of my living room but does not fit with the furnishing of my current place. Found at the Meadowsland flea marketing when I lived in New Jersey several years ago" type="text" name="description" class="descriptBox" size="20"><br>
+        <input placeholder="This piece was always a focal point of my living room but does not fit with the furnishing of my current place. Found at the Meadowsland flea marketing when I lived in New Jersey several years ago" type="text" name="description" class="descriptBox" size="23"><br>
         <label for="tags">Tags</label>
         <input class="newItemInput" placeholder="vintage, art, cozy" type="text" name="tags[]"><br>
         <input type="submit" value="Add item to gallery">
     </form>
+
+    </div>
 
     <div class="newSpacer">
     </div>

@@ -3,7 +3,7 @@
     <title>Int Design - Gallery</title>
 </head>
 <body>
-    <nav class="navBar">
+    <nav class="navBar navBarFavs">
         <h1><a class="logo" href="/">Intelligent Design</a></h1>
         <div class="navLinks">
             <h2><a class="navLinks" href="/gallery">Gallery</a></h2>
@@ -17,14 +17,14 @@
     <h1 class="favsHeading">Favorites</h1>
     
     <!-- Need conditional too add element when DB is empty -->
-    <% if (favorites.length ===0) { %>
+    <% if (favorites.length === 0) { %>
         <div class="emptyFavorites">
             <h2>Empty</h4>
             <p>Favorite items from the gallery to view them here.</p>
         </div>
     <% } else { %>
         <% for (let i = 0; i < favorites.length; i++) { %>
-        <div class="item">
+        <div class="item itemFav">
             <a href="/gallery/<%=favorites[i].id%>">
                 <div class="favItem">
                 <img class="itemImageGallery" src=<%= favorites[i].image %> >

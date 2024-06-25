@@ -8,7 +8,9 @@
 /*>>>>>>>>>>>>>>>>>>> GENERAL STYLING <<<<<<<<<<<<<<<<<<<<*/
 
 body {
-    background-color: rgb(192, 179, 157);
+    /* background-color: rgb(192, 179, 157); */
+    background-color: rgb(151, 139, 120);
+    /* background-color: rgba(234, 234, 234, 0.878); */
     width: 101vw;
     height: 100vh;
     /* border: 5px solid black; */
@@ -35,7 +37,6 @@ h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* padding: 20px 10px 0px 20px; */
     padding: 20px 10px 0px 20px;
 }
 
@@ -58,7 +59,14 @@ h3 {
 .profileIcon {
     width: 30px;
     height: 30px;
-    overflow: hidden;
+    /* overflow: hidden; */
+    background-color: rgba(214, 214, 214, 0.284);
+    border-radius: 50px;
+}
+
+.profileIconHome {
+    width: 30px;
+    height: 30px;
 }
 
 /*>>>>>>>>>>>>>>>>>>> HOME STYLING <<<<<<<<<<<<<<<<<<<<*/
@@ -138,12 +146,14 @@ h3 {
 
 /*>>>>>>>>>>>>>>>>>>> INDEX STYLING <<<<<<<<<<<<<<<<<<<<*/
 .navBarIndex {
-    padding: 20px 10px 60px 20px;
+    padding: 20px 10px 20px 20px;
+    background-color: rgba(72, 66, 73, 1);
 }
 
 .container {
     display: flex;
     justify-content: flex-end;
+    padding: 0px 0px 20px 0px;
     padding-left: 15%;
 }
 
@@ -173,6 +183,10 @@ h3 {
     color: rgba(64, 114, 122, 0.84);
     text-shadow: -0.5px -0.5px 0px rgba(64, 114, 122, 0.84), 0.5px -0.5px 0px rgba(64, 114, 122, 0.84), -0.5px 0.5px 0px #000, 0.5px 0.5px 0px #000;
     letter-spacing: 1px;
+}
+
+.indexContent {
+    padding: 30px 20px 10px 20px;
 }
 
 /*>>>>>>>>>>>>>>>>>>> FOOTER STYLING <<<<<<<<<<<<<<<<<<<<*/
@@ -240,18 +254,20 @@ h3 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: 0px 100px 0px 0px;
+    margin: 0px 100px 45px 10px;
 }
 
 .itemImage {
     /* flex-grow: 1; */
-    width: 36%;
+    width: 40%;
     margin: 80px 45px 20px 0px;
 }
 
 .showImageAndDetails {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    width: 85%;
+    margin: 60px 0px 100px 0px;
 }
 
 .details {
@@ -272,24 +288,51 @@ h3 {
 }
 
 .showOptions {
-    height: 20px;
+    height: 25px;
+    width: 25px;
     padding: 3px;
+}
+
+.navBarShow {
+    background-color: rgba(72, 66, 73, 1);
+    padding: 20px 10px 20px 20px;
 }
 
 /*>>>>>>>>>>>>>>>>>>> GENERAL FORM STYLING <<<<<<<<<<<<<<<<<<<<*/
 
 label {
     font-weight: bold;
+    font-family: titleFont;
+    font-size: 22px;
+    padding: 4px 0px 4px 0px;
 }
+
+.newItemDesc {
+    padding: 0px 0px 8px 0px;
+    font-family: montLight;
+    font-size: 15px;
+}
+
+/* .newItemDescInput {
+    font-size: 20px;
+    font-family: titleFont;
+} */
 
 .newItemInput {
     height: 20px;
     padding: 3px;
+    font-family: titleFont;
+    font-size: 20px;
 }
 
 .sellHeading {
-    text-align: center;
+    display: flex;
+    justify-content: flex-start;
     font-family: montHeavy;
+    letter-spacing: 0.5px;
+    text-align: center;
+    padding: 0px 0px 0px 20px;
+    font-size: 40px;
 }
 
 .itemForm {
@@ -297,21 +340,37 @@ label {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 25%;
-    padding: 30px 0px 0px 0px;
-    background-color: rgba(142, 142, 142, 0.762);
-}
-
-.descriptBox {
-    padding: 0px 10px 50px 10px;
+    width: 50%;
+    padding: 30px 10px 30px 10px;
+    border-radius: 0px 10% 10% 0px;
+    background-color: rgba(173, 173, 173, 0.762);
 }
 
 .newSpacer {
-    padding: 60px;
+    padding: 45px;
+}
+
+.navBarNew {
+    background-color: rgba(72, 66, 73, 1);
+    padding: 20px 10px 20px 20px;
+}
+
+.sellFlex {
+    display: flex;
+    justify-content: center;
+    height: 80%;
+    width: 90%;
+}
+
+.fillerImage {
+    width: 760px;
+    height: auto;
+    margin: 0px 0px 0px 150px;
+    border-radius: 10% 0px 0px 10%;
 }
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-    white-space:pre-line;  
+    white-space:wrap;  
     position:relative;
     /* word-break: break-all; */
   }
@@ -328,6 +387,14 @@ label {
     position:relative;
   }
 
+.descInput {
+    font-family: titleFont;
+    font-size: 20px;
+}
+
+.descriptBox {
+    padding: 0px 10px 50px 10px;
+}
 
 /*>>>>>>>>>>>>>>>>>>> EDIT/DELETE ICON STYLING <<<<<<<<<<<<<<<<<<<<*/
 
@@ -358,16 +425,35 @@ label {
 }
 
 .editForm {
-    justify-content: stretch;
     width: 40%;
     margin: 20px;
-    background-color: rgba(142, 142, 142, 0.762);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 10px 30px 10px;
+    border-radius: 10%;
+    /* margin: 0 auto; */
+    /* width: 50%; */
+    /* background-color: rgba(142, 142, 142, 0.762); */
+    background-color: rgba(173, 173, 173, 0.762);
 }
 
 .editSpacer {
     padding: 60px;
 }
 
+.navBarEdit {
+    background-color: rgba(72, 66, 73, 1);
+    padding: 20px 10px 20px 20px;
+}
+
+.editItemDesc {
+    height: 20px;
+    padding: 3px;
+    font-family: titleFont;
+    font-size: 20px;
+}
+  
 /*>>>>>>>>>>>>>>>>>>> FAVORITES PAGE STYLING <<<<<<<<<<<<<<<<<<<<*/
 
 .favoritesDelete {
@@ -385,10 +471,13 @@ label {
 }
 
 .favsHeading {
+    display: flex;
+    justify-content: flex-start;
     font-family: montHeavy;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     text-align: center;
-    padding: 30px 0px 0px 0px;
+    padding: 30px 0px 0px 20px;
+    font-size: 40px;
 }
 
 .favDetails {
@@ -406,6 +495,7 @@ label {
     width: 52%;
     padding: 20px 0px 20px 20px;
     background-color: rgba(125, 125, 125, 0.504);
+    border-radius: 10px;
 }
 
 .emptyFavorites {
@@ -414,13 +504,29 @@ label {
     justify-content: center;
     text-align: center;
     align-items: center;
-    background-color: rgba(125, 125, 125, 0.504);
+    /* background-color: rgba(125, 125, 125, 0.504); */
+    background-color: rgba(173, 173, 173, 0.762);
     width: 96%;
     height: 650px;
     border-radius: 50px;
     margin: 20px 20px 50px 23px;
     font-size: 24px;
     font-family: titleFont;
+}
+
+.navBarFavs {
+    background-color: rgba(72, 66, 73, 1);
+    padding: 20px 10px 20px 20px;
+}
+
+.itemFav {
+    padding: 10px 0px 0px 20px;
+}
+
+.descriptBox {
+    height: 30px;
+    font-family: titleFont;
+    font-size: 18px;
 }
 
 /*>>>>>>>>>>>>>>>>>>> ALL LINK STYLING <<<<<<<<<<<<<<<<<<<<*/
