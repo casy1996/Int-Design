@@ -23,13 +23,14 @@
             <p>Favorite items from the gallery to view them here.</p>
         </div>
     <% } else { %>
+        <div class="favsContainer">
         <% for (let i = 0; i < favorites.length; i++) { %>
         <div class="item itemFav">
-            <a href="/gallery/<%=favorites[i].galleryId._id%>">
+            <a class="favLink" href="/gallery/<%=favorites[i].galleryId._id%>">
                 <div class="favItem">
                 <img class="favImageGallery" src=<%= favorites[i].galleryId.image %> >
                     <div class="favoritesDelete">
-                        <h3 class="favDetails"><%= favorites[i].galleryId.name %> $<%= favorites[i].galleryId.price%></h3> 
+                        <!-- <h3 class="favDetails"><%= favorites[i].galleryId.name %> $<%= favorites[i].galleryId.price%></h3>  -->
                         
                         <form class="favoritesTrash" action="/favorites/<%=favorites[i]._id%>?_method=DELETE" method="POST">
                             <input class="favTrash" type="image" src='https://i.postimg.cc/xTQsyp6y/trash.png' alt="Delete"/>
@@ -41,6 +42,7 @@
         <br></br>
         <% } %>
     <% } %>
+    </div>
 
 
     <div class="favSpacer">

@@ -28,10 +28,14 @@
         <label for="price">Price</label>
         <input class="editItemDesc" value="<%=gallery.price%>" type="number" name="price" min="1"><br>
         <label for="description">Description</label>
+        <p class="newItemDesc">Talk about your piece. Is it homemade? If not, where was it purchased from? Describe the quality of the piece and remember to mention any damages. 
+            <br></br>
+            Adding a description helps others decide on purchasing.
+        </p>
         <input value="<%=gallery.description%>" placeholder="<%=gallery.description%>" type="text" name="description" class="descriptBox" size="20"><br>
         <label for="tags">Tags</label>
-        <input class="editItemDesc" value="<%=gallery.tags%>" type="text" name="tags[]"><br>
-        <input type="submit" value="Save Changes">
+        <input class="editItemDesc tags" value="<%=gallery.tags%>" type="text" name="tags[]"><br>
+        <input class="submitButton" type="submit" value="Save Changes">
     </form>
     </div>
 

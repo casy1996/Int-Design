@@ -14,7 +14,11 @@
         </div>
     </nav>
 
-        
+    <div class="backButton"> 
+    <a class="backButton" href="/gallery">&#8592; Back to Gallery</a>
+    </div>
+
+
         <div class="itemShow">
             <div class="postOptions">
                 <form action="/favorites" method="POST">
@@ -31,9 +35,9 @@
             <div class="showImageAndDetails">
                 <img class="itemImage" src= <%= gallery.image %> >
                 <span class="details">
-                    <h3><%= gallery.name %> $<%= gallery.price%></h3>
+                    <h3 class="showHead"><%= gallery.name %> $<%= gallery.price%></h3>
                     <p class="itemDescript"><%= gallery.description%></p>
-                    <h5>Tags: <%=gallery.tags.join(' | ')%></h5>
+                    <h5 class="showTags">Tags: <%=gallery.tags.join(' | ')%></h5>
                 <button class="addToCart" type="button" name="addToCart">Add to Cart</button>
                 </span>
             </div>
