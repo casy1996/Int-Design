@@ -38,11 +38,11 @@ Form an items show page, users can edit the items information, save it to a favo
 
 
 ## <a name="design"></a>Design
+##### Add items to the gallery
 ![](./data/screenshots/new_item_menu.png)
-* Add items to the gallery
 
+##### Item details page
 ![](./data/screenshots/show_view.png)
-* Item details page
 
 ## <a name="nextsteps"></a>Future Features
 Incorporate search function and hyperlink tags to filter through gallery items. <br>
@@ -56,7 +56,7 @@ Repository: [Github.com](https://github.com/casy1996/Int-Design)
   
     
 ## <a name="workcited"></a>Works Cited:
-Referencing between Models:
+Referencing between models:
 - [Referencing another schema in mongoose](https://github.com/rohan-paul/Awesome-JavaScript-Interviews/blob/master/MongoDB/referencing-another-schema-in-Mongoose-2.md)
 - [Reference ObjectId from another collection](https://www.mongodb.com/community/forums/t/how-to-reference-the-objectid-from-one-collection-schema-to-another/203108) 
 - [Populate method](https://mongoosejs.com/docs/populate.html)
