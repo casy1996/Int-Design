@@ -1,11 +1,10 @@
 # Intelligent Design
 
 #### A full-stack CRUD application.
-<img src="" alt="">
-
+<iframe src="https://giphy.com/embed/frGrCw2wk82NiawdUF" width="480" height="256" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 
 ## Description
-Int Design (Intelligent Design) is an community-powered, interior-design focused online market. 
+Int Design (Intelligent Design) is an community-powered, interior-design focused gallery. 
 
 ## Table of Contents
 * [Technologies Used](#technologiesused)
@@ -13,6 +12,7 @@ Int Design (Intelligent Design) is an community-powered, interior-design focused
 * [Design](#design)
 * [Future Features](#nextsteps)
 * [Deployed App](#deployment)
+* [Works Cited](#workcited)
 * [About the Author](#author)
 
 
@@ -20,13 +20,19 @@ Int Design (Intelligent Design) is an community-powered, interior-design focused
 * JavaScript
 * HTML5
 * CSS3
+* Node.js
+* EJS
+* Express
+* MongoDB
+* Mongoose
 
 
 ## Features
 <img src="" alt="">
-
-- Users can create an account, enabling favorites page and selling features.
-- Users can view items in the gallery, add to cart, and purchase.
+- Users can view items a gallery of items.
+- Users can see extra details of each item on their own page.
+- Users can create and post their own items to be viewed in the gallery.
+- Form an items show page, users can edit the items information, save it to a favorites page, or delete the item from the gallery.
 
 
 ## <a name="design"></a>Design
@@ -35,20 +41,22 @@ Int Design (Intelligent Design) is an community-powered, interior-design focused
 
 
 ## <a name="nextsteps"></a>Future Features
-*
-*
+* Incorporate search function and hyperlink tags to filter through gallery items.
+* Ability to purchase item from other users. Cart view and purchase form, ability to interface with merchant services.
 
 ## <a name="deployment"></a>Deployed Link
-Landing Page:
-
-Main Game:
+Home Page:
 
 * You can view the repository:
 [Github.com](https://github.com/casy1996/Int-Design)
   
     
-## Works Cited:
--
+## <a name="workcited"></a>Works Cited:
+- Referencing between Models
+[Github.com](https://github.com/rohan-paul/Awesome-JavaScript-Interviews/blob/master/MongoDB/referencing-another-schema-in-Mongoose-2.md)
+[Monogdb.com](https://www.mongodb.com/community/forums/t/how-to-reference-the-objectid-from-one-collection-schema-to-another/203108) 
+[Mongoosejs.com](https://mongoosejs.com/docs/populate.html)
+
 
 
 ## <a name="author"></a>About the Author:

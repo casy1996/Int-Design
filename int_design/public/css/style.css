@@ -361,11 +361,6 @@ label {
     font-size: 15px;
 }
 
-/* .newItemDescInput {
-    font-size: 20px;
-    font-family: titleFont;
-} */
-
 .newItemInput {
     height: 20px;
     padding: 3px;
@@ -375,11 +370,11 @@ label {
 
 .sellHeading {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     font-family: montHeavy;
     letter-spacing: 0.5px;
     text-align: center;
-    padding: 0px 0px 0px 20px;
+    /* padding: 0px 0px 0px 20px; */
     font-size: 40px;
 }
 
@@ -468,7 +463,6 @@ label {
 }
 
 .editImage {
-    /* justify-content: center; */
     align-items: center;
     width: 35%;
     height: 35%;
@@ -483,9 +477,6 @@ label {
     justify-content: center;
     padding: 30px 10px 30px 10px;
     border-radius: 10%;
-    /* margin: 0 auto; */
-    /* width: 50%; */
-    /* background-color: rgba(142, 142, 142, 0.762); */
     background-color: rgba(173, 173, 173, 0.762);
 }
 
@@ -533,7 +524,6 @@ input[type=submit]:active {
     transform: translateY(3px);
 }
 
-
   
 /*>>>>>>>>>>>>>>>>>>> FAVORITES PAGE STYLING <<<<<<<<<<<<<<<<<<<<*/
 
@@ -549,11 +539,12 @@ input[type=submit]:active {
 
 .favsHeading {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     font-family: montHeavy;
     letter-spacing: 0.5px;
     text-align: center;
-    padding: 30px 0px 30px 20px;
+    /* padding: 30px 0px 30px 20px; */
+    padding: 5px 0px 20px 0px;
     font-size: 40px;
 }
 
@@ -563,9 +554,7 @@ input[type=submit]:active {
     font-family: montHeavy;
     padding: 0px 0px 0px 6px;
     font-size: 38px;
-    /* color: rgba(64, 114, 122, 0.84); */
     color: rgba(0, 0, 0, 0.84);
-    /* text-shadow: -0.5px -0.5px 0px rgba(64, 114, 122, 0.84), 0.5px -0.5px 0px rgba(64, 114, 122, 0.84), -0.5px 0.5px 0px #000, 0.5px 0.5px 0px #000; */
     letter-spacing: 1px;
 }
 
