@@ -1,10 +1,10 @@
 # Intelligent Design
 
 #### A full-stack CRUD application.
-
+![](https://github.com/casy1996/Int-Design/blob/main/data/screenshots/intdesign.gif)
 
 ## Description
-Int Design (Intelligent Design) is an community-powered, interior-design focused gallery. 
+Int Design (Intelligent Design) is an community-powered, interior-design focused online marketplace. 
 
 ## Table of Contents
 * [Technologies Used](#technologiesused)
@@ -18,7 +18,6 @@ Int Design (Intelligent Design) is an community-powered, interior-design focused
 
 ## <a name="technologiesused"></a>Technologies Used
 * JavaScript
-* HTML5
 * CSS3
 * Node.js
 * EJS
@@ -28,7 +27,6 @@ Int Design (Intelligent Design) is an community-powered, interior-design focused
 
 
 ## Features
-<img src="" alt="">
 - Users can view items a gallery of items.
 - Users can see extra details of each item on their own page.
 - Users can create and post their own items to be viewed in the gallery.
@@ -41,8 +39,8 @@ Int Design (Intelligent Design) is an community-powered, interior-design focused
 
 
 ## <a name="nextsteps"></a>Future Features
-* Incorporate search function and hyperlink tags to filter through gallery items.
-* Ability to purchase item from other users. Cart view and purchase form, ability to interface with merchant services.
+Incorporate search function and hyperlink tags to filter through gallery items.
+Ability to purchase item from other users. Cart view and purchase form, ability to interface with merchant services.
 
 ## <a name="deployment"></a>Deployed Link
 Home Page:
@@ -52,11 +50,10 @@ Home Page:
   
     
 ## <a name="workcited"></a>Works Cited:
-- Referencing between Models
-[Github.com](https://github.com/rohan-paul/Awesome-JavaScript-Interviews/blob/master/MongoDB/referencing-another-schema-in-Mongoose-2.md)
-[Monogdb.com](https://www.mongodb.com/community/forums/t/how-to-reference-the-objectid-from-one-collection-schema-to-another/203108) 
-[Mongoosejs.com](https://mongoosejs.com/docs/populate.html)
-
+Referencing between Models:
+- [Referencing another schema in mongoose](https://github.com/rohan-paul/Awesome-JavaScript-Interviews/blob/master/MongoDB/referencing-another-schema-in-Mongoose-2.md)
+- [Reference ObjectId from another collection](https://www.mongodb.com/community/forums/t/how-to-reference-the-objectid-from-one-collection-schema-to-another/203108) 
+- [Populate method](https://mongoosejs.com/docs/populate.html)
 
 
 ## <a name="author"></a>About the Author:
