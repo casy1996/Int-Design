@@ -2,7 +2,7 @@
 
 #### A full-stack CRUD application.
 <!-- ![](https://github.com/casy1996/Int-Design/blob/main/data/screenshots/intdesign.gif) -->
-
+<br>
 <p align="center" width=150>
 <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdWV5NWpkaGxuNjU0MmpwZXQwZzVtemVjZGxzcTV2MHI4anY3Mjl1bCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/frGrCw2wk82NiawdUF/giphy.gif" />
 </p>
@@ -38,9 +38,11 @@ Form an items show page, users can edit the items information, save it to a favo
 
 
 ## <a name="design"></a>Design
-* placeholder
-* <img src="" alt="">
+![](./data/screenshots/new_item_menu.png)
+* Add items to the gallery
 
+![](./data/screenshots/show_view.png)
+* Item details page
 
 ## <a name="nextsteps"></a>Future Features
 Incorporate search function and hyperlink tags to filter through gallery items. <br>
