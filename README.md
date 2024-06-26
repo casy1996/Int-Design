@@ -1,9 +1,11 @@
 # Intelligent Design
 
 #### A full-stack CRUD application.
-![](https://github.com/casy1996/Int-Design/blob/main/data/screenshots/intdesign.gif)
+<!-- ![](https://github.com/casy1996/Int-Design/blob/main/data/screenshots/intdesign.gif) -->
 
-<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdWV5NWpkaGxuNjU0MmpwZXQwZzVtemVjZGxzcTV2MHI4anY3Mjl1bCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/frGrCw2wk82NiawdUF/giphy.gif" width="100%">
+<p align="center" width=150>
+<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdWV5NWpkaGxuNjU0MmpwZXQwZzVtemVjZGxzcTV2MHI4anY3Mjl1bCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/frGrCw2wk82NiawdUF/giphy.gif" />
+</p>
 
 ## Description
 Int Design (Intelligent Design) is an community-powered, interior-design focused online marketplace. 
