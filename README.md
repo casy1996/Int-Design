@@ -1,7 +1,6 @@
 # Intelligent Design
 
 #### A full-stack CRUD application.
-<!-- ![](https://github.com/casy1996/Int-Design/blob/main/data/screenshots/intdesign.gif) -->
 <br>
 <p align="center" width=150>
 <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdWV5NWpkaGxuNjU0MmpwZXQwZzVtemVjZGxzcTV2MHI4anY3Mjl1bCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/frGrCw2wk82NiawdUF/giphy.gif" />
@@ -50,7 +49,7 @@ Users can purchase item posted to the gallery. <br>
 Cart view with checkout form. Integrated merchant services.
 
 ## <a name="deployment"></a>Deployed Link
-Home Page:
+Home Page: [Int-Design.com](https://int-design-a8yh.onrender.com/)
 
 Repository: [Github.com](https://github.com/casy1996/Int-Design)
   
