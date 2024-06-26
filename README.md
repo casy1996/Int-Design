@@ -3,6 +3,8 @@
 #### A full-stack CRUD application.
 ![](https://github.com/casy1996/Int-Design/blob/main/data/screenshots/intdesign.gif)
 
+<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdWV5NWpkaGxuNjU0MmpwZXQwZzVtemVjZGxzcTV2MHI4anY3Mjl1bCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/frGrCw2wk82NiawdUF/giphy.gif" width="100%">
+
 ## Description
 Int Design (Intelligent Design) is an community-powered, interior-design focused online marketplace. 
 
@@ -27,10 +29,10 @@ Int Design (Intelligent Design) is an community-powered, interior-design focused
 
 
 ## Features
-- Users can view items a gallery of items.
-- Users can see extra details of each item on their own page.
-- Users can create and post their own items to be viewed in the gallery.
-- Form an items show page, users can edit the items information, save it to a favorites page, or delete the item from the gallery.
+Users can view items a gallery of items. <br>
+Users can see extra details of each item on their own page. <br>
+Users can create and post their own items to be viewed in the gallery.<br>
+Form an items show page, users can edit the items information, save it to a favorites page, or delete the item from the gallery.
 
 
 ## <a name="design"></a>Design
@@ -39,14 +41,14 @@ Int Design (Intelligent Design) is an community-powered, interior-design focused
 
 
 ## <a name="nextsteps"></a>Future Features
-Incorporate search function and hyperlink tags to filter through gallery items.
-Ability to purchase item from other users. Cart view and purchase form, ability to interface with merchant services.
+Incorporate search function and hyperlink tags to filter through gallery items. <br>
+Ability to purchase item from other users. <br>
+Cart view and purchase form, ability to interface with merchant services.
 
 ## <a name="deployment"></a>Deployed Link
 Home Page:
 
-* You can view the repository:
-[Github.com](https://github.com/casy1996/Int-Design)
+Repository: [Github.com](https://github.com/casy1996/Int-Design)
   
     
 ## <a name="workcited"></a>Works Cited:
@@ -57,4 +59,4 @@ Referencing between Models:
 
 
 ## <a name="author"></a>About the Author:
-Up and coming software developer with a passion for design and all things visual.
+Up and coming full-stack software developer with a passion for design and all things visual.
