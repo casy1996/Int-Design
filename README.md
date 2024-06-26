@@ -1,7 +1,7 @@
 # Intelligent Design
 
 #### A full-stack CRUD application.
-<iframe src="https://giphy.com/embed/frGrCw2wk82NiawdUF" width="480" height="256" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+
 
 ## Description
 Int Design (Intelligent Design) is an community-powered, interior-design focused gallery. 
