@@ -7,19 +7,13 @@ module.exports = router
 
 //LANDING PAGE
 router.get("/", (req, res)=> {
-    // res.send(`home page`)
     res.render("home.ejs")
 });
 
 //INDEX
 router.get("/gallery", async (req, res)=> {
-    // res.send(seedData)
-    // res.render("index.ejs", {
-    //     seedData: seedData,
-    // })
     try {
         const showAll = await Gallery.find({})
-        // console.log(showAll)
         res.render("index.ejs", {
             gallery: showAll,
         })
@@ -31,14 +25,11 @@ router.get("/gallery", async (req, res)=> {
 
 //NEW
 router.get("/gallery/new", (req, res)=> {
-    // res.send(`new route`)
     res.render("new.ejs")
 });
 
 //DELETE
 router.delete("/gallery/:id", async (req, res)=> {
-    // gallery.splice(req.params.id, 1)
-    // res.redirect("/gallery")
     try {
         await Gallery.findByIdAndDelete(req.params.id);
         await Favorite.deleteMany({ galleryId: req.params.id}) 
@@ -51,8 +42,6 @@ router.delete("/gallery/:id", async (req, res)=> {
 
 //UPDATE
 router.put("/gallery/:id", async (req, res)=> {
-    // seedData[req.params.id] = req.body
-    // res.redirect("/gallery")
     try {
         let updatedItem = await Gallery.findByIdAndUpdate(req.params.id, req.body, { new: true });
         console.log(updatedItem)
@@ -65,12 +54,8 @@ router.put("/gallery/:id", async (req, res)=> {
 
 //CREATE
 router.post("/gallery", async (req, res)=> {
-    // console.log(req.body)
-    // seedData.push(req.body);
-    // res.redirect("/gallery")
     try {
         await Gallery.create(req.body)
-        // console.log(req.body)
         res.redirect("/gallery")
     } catch (error) {
         console.error(error)
@@ -80,10 +65,6 @@ router.post("/gallery", async (req, res)=> {
 
 //EDIT
 router.get("/gallery/:id/edit", async (req, res)=> {
-    // res.render("edit.ejs", {
-    //     seedData: seedData[req.params.id],
-    //     index: req.params.id,
-    // })
     try {
         const editItem = await Gallery.findById(req.params.id)
         res.render("edit.ejs", {
@@ -97,15 +78,8 @@ router.get("/gallery/:id/edit", async (req, res)=> {
 
 //SHOW
 router.get("/gallery/:id", async (req, res)=> {
-    // res.send(`show route`)
-    // res.render("show.ejs", {
-    //     seedData: seedData[req.params.id],
-    //     index: req.params.id,
-    // })
     try {
         const singleItem = await Gallery.findById(req.params.id)
-        // console.log(singleItem);
-        // res.send(singleItem);
         res.render("show.ejs", {
             gallery: singleItem,
         })

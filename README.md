@@ -46,8 +46,8 @@ Form an items show page, users can edit the items information, save it to a favo
 
 ## <a name="nextsteps"></a>Future Features
 Incorporate search function and hyperlink tags to filter through gallery items. <br>
-Ability to purchase item from other users. <br>
-Cart view and purchase form, ability to interface with merchant services.
+Users can purchase item posted to the gallery. <br>
+Cart view with checkout form. Integrated merchant services.
 
 ## <a name="deployment"></a>Deployed Link
 Home Page:

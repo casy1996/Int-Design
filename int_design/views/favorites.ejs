@@ -9,8 +9,7 @@
             <h2><a class="navLinks" href="/gallery">Gallery</a></h2>
             <h2><a class="navLinks" href="/favorites">Favorites</a></h2>
             <h2><a class="navLinks" href="/gallery/new">Create Listing</a></h2>
-            <!-- <h2><a class="navLinks" href="/cart">Cart</a></h2> -->
-            <a class="navLinks linkToAccount" href="/my_account"><img class="navLinks profileIcon" src='https://i.postimg.cc/SNK1GfHn/user.png'></a>
+            <a class="navLinks linkToAccount" href="/favorites"><img class="navLinks profileIcon" src='https://i.postimg.cc/SNK1GfHn/user.png'></a>
         </div>
     </nav>
 
@@ -20,7 +19,6 @@
 
     <h1 class="favsHeading">Favorites</h1>
     
-    <!-- Need conditional too add element when DB is empty -->
     <% if (favorites.length === 0) { %>
         <div class="emptyFavorites">
             <h2>Empty</h4>
@@ -34,7 +32,6 @@
                 <div class="favItem">
                 <img class="favImageGallery" src=<%= favorites[i].galleryId.image %> >
                     <div class="favoritesDelete">
-                        <!-- <h3 class="favDetails"><%= favorites[i].galleryId.name %> $<%= favorites[i].galleryId.price%></h3>  -->
                         
                         <form class="favoritesTrash" action="/favorites/<%=favorites[i]._id%>?_method=DELETE" method="POST">
                             <input class="favTrash" type="image" src='https://i.postimg.cc/xTQsyp6y/trash.png' alt="Delete"/>

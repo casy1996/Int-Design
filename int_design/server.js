@@ -10,11 +10,6 @@ const favoriteController = require("./controllers/favorites.js")
 //CONFIGURATION
 const mongoURI = 'mongodb://127.0.0.1:27017/gallery'
 
-//MODELS
-// Moved to controller
-// const Gallery = require('./models/gallery.js')
-// const seedData = require('./models/seed.js')
-
 //MMIDDLEWARE
 app.use(express.json());
 app.use(express.static('public'));
